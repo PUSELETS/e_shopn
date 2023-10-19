@@ -1,5 +1,8 @@
+import { Toaster } from 'react-hot-toast';
+import { Layout } from '@/components'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import { StateContext } from '@/context/StateContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,7 +14,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <StateContext>
+        <body className={inter.className}>
+          <Layout>
+            <Toaster />
+            <main className="main-container">{children}</main>
+          </Layout>
+        </body>
+      </StateContext>
     </html>
   )
 }
