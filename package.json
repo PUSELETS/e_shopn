@@ -1,7 +1,7 @@
 {
-  "name": "eshop-final",
+  "name": "eshop-finall",
   "version": "0.1.0",
-  "homepage": "https://PUSELETS.github.io/e_shop",
+  "homepage": "https://PUSELETS.github.io/e_shopn",
   "private": true,
   "scripts": {
     "predeploy": "npm run build",

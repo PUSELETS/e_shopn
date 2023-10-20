@@ -3,7 +3,7 @@ import Home from './home';
 
 export const getAllAdminProducts = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/admin/all-product", {
+    const res = await fetch("https://PUSELETS.github.io/e_shopn/api/admin/all-product", {
       method: "GET",
       cache: "no-store",
     });
